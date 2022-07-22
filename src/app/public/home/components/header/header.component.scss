@@ -1,0 +1,11 @@
+.logo {
+    max-width: 60%;
+    margin-top: 20%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px){
+    .logo {
+        max-width: 30%;
+    }
+}

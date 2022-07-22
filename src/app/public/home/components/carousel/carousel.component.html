@@ -1,0 +1,28 @@
+<div class="col-12 text-center">
+    <h1 class="subscriber-titulo text-uppercase" data-aos="fade-down"
+    data-aos-anchor-placement="bottom-bottom"
+    data-aos-duration="3000">{{ text }}</h1>
+</div>
+<div *ngIf="images && images.length > 0" class="carousel-container" data-aos="zoom-in" data-aos-duration="3000">
+    <img *ngFor="let image of images; let i=index"
+             [src]="image.imageSrc" [alt]="image.imageAlt"
+             [ngClass]="{'image-active': selectedIndex === i}"
+             >
+
+        <div *ngIf="indicators" class="carousel-dot-container">
+            <span *ngFor="let dot of images; let i=index"
+                   class="dot"
+                   [ngClass]="{'active': selectedIndex === i}"
+                   (click)="selectImage(i)"
+                   >
+                </span>
+        </div>
+
+        <button *ngIf="controls" class="btn-carousel btn-prev" (click)="onPrevClick()">
+            <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+        </button>
+
+        <button *ngIf="controls" class="btn-carousel btn-next" (click)="onNextClick()">
+            <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+        </button>
+</div>

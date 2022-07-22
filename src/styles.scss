@@ -1,0 +1,139 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+/* VARIABLES*/
+:root{
+    /* Colors */
+        /* Blue */
+        --azul-claro: #33C1FF;
+        --azul-medio: #2CABE2;
+        --azul-oscuro: #2B9CCD;
+
+        /* Green */
+        --verde-claro: #B5F02F;
+}
+
+
+/* FONTS */
+    /*Subscriber*/
+    @font-face {
+        font-family: subscriber;
+        src: url('assets/fonts/subscriber/SUBSCRIBER-Regular.otf');
+    }
+    .subscriber-titulo {
+        font-family: 'subscriber', sans-serif;
+        font-weight: 800;
+        font-size: 5rem;
+    }
+
+    .subscriber-subtitulo{
+        font-family: 'subscriber', sans-serif;
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    /* Montserrat */
+    .montserrat-titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+    }
+
+    .montserrat-subtitulo {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    .montserrat-texto {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+
+    /* Comfortaa */
+    .comfortaa-titulo {
+        font-family: 'Comfortaa', cursive;
+        font-weight: 800;
+    }
+
+    .comfortaa-subtitulo {
+        font-family: 'Comfortaa', cursive;
+        font-weight: 600;
+    }
+
+    .comfortaa-texto {
+        font-family: 'Comfortaa', cursive;
+        font-weight: 500;
+    }
+
+/* Header & background transformation */
+.header {
+    background-image: url(../src/assets/img/bg/header.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header::after {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.vh-50 {
+    height: 50vmin;
+}
+
+.vh-60 {
+    height: 75vmin;
+}
+
+.transform-turn {
+    transform: rotate(.5turn)
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul-claro);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: 3ms;
+    background-color: var(--azul-medio);
+}
+
+/* Media Queries */
+@media screen and (max-width: 425px) {
+    .vh-50 {
+        height: 45vmax;
+    }
+
+    .vh-60 {
+        height: 265vmax;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .vh-50 {
+        height: 50vmax;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .vh-50 {
+        height: 60vmax;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .vh-60 {
+        height: 130vmax;
+    }
+}

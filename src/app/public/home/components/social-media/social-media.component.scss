@@ -1,0 +1,42 @@
+i {
+    font-size: 5rem;
+}
+
+@media screen and (max-width:425px){
+    h2 {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width:320px){
+    h2 {
+        font-size: small;
+    }
+}
+
+.fa-facebook {
+    color: rgba(0, 86, 214, 0.562);
+}
+
+.fa-instagram {
+    color: rgba(228, 21, 159, 0.541);
+}
+
+.fa-tiktok {
+    color: rgba(0, 0, 0, 0.555);
+}
+
+.fa-facebook:hover{
+    color: rgb(0, 86, 214);
+    transition: all 1.5s;
+}
+
+.fa-instagram:hover{
+    color: rgb(228, 21, 159);
+    transition: all 1.5s;
+}
+
+.fa-tiktok:hover{
+    color: rgb(0, 0, 0);
+    transition: all 1.5s;
+}

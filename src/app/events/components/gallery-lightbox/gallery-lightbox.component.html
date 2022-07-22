@@ -1,0 +1,30 @@
+<div class="gallery-lightbox-container mt-5">
+    <h1 class="mt-2 subscriber-titulo text-uppercase">{{ title }}</h1>
+    <h3 class="mb-5 mt-0 comfortaa-subtitulo text-uppercase">{{ subtitle }}</h3>
+    <div class="gallery">
+        <div *ngFor="let data of galleryData; let i=index" class="gallery-img">
+            <img (click)="onPreviewImage(i)" data-aos="zoom-in" data-aos-duration="3000" [src]="data.imageSrc" [alt]="data.imageAlt">
+        </div>
+    </div>
+    <div *ngIf="showMask" class="lightbox" @animation2>
+        <span *ngIf="showCount" class="count">
+            {{currentIndex + 1}}/{{totalImageCount}}
+        </span>
+        <button *ngIf="previewImage" class="close-btn" (click)="onClosePreview()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button *ngIf="controls" class="btn-lightbox-carousel btn-prev" (click)="prev()">
+            <i class="fas fa-arrow-circle-left icon-lightbox-carousel icon-prev"></i>
+        </button>
+        <button *ngIf="controls" class="btn-lightbox-carousel btn-next" (click)="next()">
+            <i class="fas fa-arrow-circle-right icon-lightbox-carousel icon-next"></i>
+        </button>
+
+        <div *ngIf="previewImage" 
+            [@animation]="{value: 'visible'}"
+            (@animation.done)="onAnimationEnd($event)"
+            class="lightbox-img">
+            <img [src]="currentLightboxImage.imageSrc" [alt]="currentLightboxImage.imageAlt">
+        </div>
+    </div>
+</div>
