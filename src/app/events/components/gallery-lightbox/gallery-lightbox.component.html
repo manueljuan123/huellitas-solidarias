@@ -3,7 +3,7 @@
     <h3 class="mb-5 mt-0 comfortaa-subtitulo text-uppercase">{{ subtitle }}</h3>
     <div class="gallery">
         <div *ngFor="let data of galleryData; let i=index" class="gallery-img">
-            <img (click)="onPreviewImage(i)" data-aos="zoom-in" data-aos-duration="3000" [src]="data.imageSrc" [alt]="data.imageAlt">
+            <img loading="lazy" (click)="onPreviewImage(i)" data-aos="zoom-in" data-aos-duration="3000" [src]="data.imageSrc" [alt]="data.imageAlt">
         </div>
     </div>
     <div *ngIf="showMask" class="lightbox" @animation2>

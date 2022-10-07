@@ -89,13 +89,5 @@ export class CiudadelaComfenalcoComponent implements OnInit {
       imageSrc: "assets/img/events/armenia/comuna1/ciudadela-comfenalco/18.jpg",
       imageAlt: "18"
     },
-    {
-      imageSrc: "assets/img/events/armenia/comuna1/ciudadela-comfenalco/19.jpg",
-      imageAlt: "19"
-    },
-    {
-      imageSrc: "assets/img/events/armenia/comuna1/ciudadela-comfenalco/20.jpg",
-      imageAlt: "20"
-    }
   ]
 }

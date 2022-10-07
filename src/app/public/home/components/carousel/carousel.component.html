@@ -4,7 +4,7 @@
     data-aos-duration="3000">{{ text }}</h1>
 </div>
 <div *ngIf="images && images.length > 0" class="carousel-container" data-aos="zoom-in" data-aos-duration="3000">
-    <img *ngFor="let image of images; let i=index"
+    <img loading="lazy" *ngFor="let image of images; let i=index"
              [src]="image.imageSrc" [alt]="image.imageAlt"
              [ngClass]="{'image-active': selectedIndex === i}"
              >
