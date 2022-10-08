@@ -61,5 +61,9 @@ export class VeracruzComponent implements OnInit {
       imageSrc: "assets/img/events/calarca/veracruz/11.jpg",
       imageAlt: "11"
     },
+    {
+      imageSrc: "assets/img/events/calarca/veracruz/11.jpg",
+      imageAlt: "12"
+    },
   ]
 }

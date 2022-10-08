@@ -26,6 +26,10 @@ i {
     color: rgba(0, 0, 0, 0.555);
 }
 
+.fa-youtube {
+    color: rgba(215, 0, 0, 0.567);
+}
+
 .fa-facebook:hover{
     color: rgb(0, 86, 214);
     transition: all 1.5s;
@@ -38,5 +42,10 @@ i {
 
 .fa-tiktok:hover{
     color: rgb(0, 0, 0);
+    transition: all 1.5s;
+}
+
+.fa-youtube:hover {
+    color: rgb(215, 0, 0);
     transition: all 1.5s;
 }
