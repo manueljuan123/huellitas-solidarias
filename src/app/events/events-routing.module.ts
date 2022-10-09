@@ -5,6 +5,7 @@ import { CiudadelaComfenalcoComponent } from "./containers/armenia/comuna1/ciuda
 import { VeracruzComponent } from "./containers/calarca/veracruz/veracruz.component"
 import { LaSoledadComponent } from "./containers/montenegro/la-soledad/la-soledad.component";
 import { VillaLauraComponent } from "./containers/quimbaya/villa-laura/villa-laura.component";
+import { AltoDeLaTazaComponent } from "./containers/circasia/alto-de-la-taza/alto-de-la-taza.component";
 
 const routes: Routes = [
   { path: '', component: EventsComponent, children:
@@ -15,6 +16,9 @@ const routes: Routes = [
 
     // CALARCÁ
     { path: 'calarca/veracruz', component: VeracruzComponent },
+
+    // CIRCASIA
+    { path: 'circasia/alto-de-la-taza', component: AltoDeLaTazaComponent },
 
     // MONTENEGRO
     { path: 'montenegro/la-soledad', component: LaSoledadComponent },

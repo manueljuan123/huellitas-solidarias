@@ -8,6 +8,7 @@ import { CiudadelaComfenalcoComponent } from './containers/armenia/comuna1/ciuda
 import { VeracruzComponent } from './containers/calarca/veracruz/veracruz.component';
 import { LaSoledadComponent } from './containers/montenegro/la-soledad/la-soledad.component';
 import { VillaLauraComponent } from './containers/quimbaya/villa-laura/villa-laura.component';
+import { AltoDeLaTazaComponent } from './containers/circasia/alto-de-la-taza/alto-de-la-taza.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import { VillaLauraComponent } from './containers/quimbaya/villa-laura/villa-lau
         VeracruzComponent,
         LaSoledadComponent,
         VillaLauraComponent,
+        AltoDeLaTazaComponent,
     ],
     imports: [
         CommonModule,
