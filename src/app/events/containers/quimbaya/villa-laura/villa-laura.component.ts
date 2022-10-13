@@ -128,16 +128,7 @@ export class VillaLauraComponent implements OnInit {
     {
       imageSrc: "assets/img/events/quimbaya/villa-laura/28.jpg",
       imageAlt: "28"
-    },
-    {
-      imageSrc: "assets/img/events/quimbaya/villa-laura/29.jpg",
-      imageAlt: "29"
-    },
-    {
-      imageSrc: "assets/img/events/quimbaya/villa-laura/30.jpg",
-      imageAlt: "30"
-    },
-
+    }
   ]
 
 }
