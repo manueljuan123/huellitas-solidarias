@@ -6,6 +6,7 @@ import { VeracruzComponent } from "./containers/calarca/veracruz/veracruz.compon
 import { LaSoledadComponent } from "./containers/montenegro/la-soledad/la-soledad.component";
 import { VillaLauraComponent } from "./containers/quimbaya/villa-laura/villa-laura.component";
 import { AltoDeLaTazaComponent } from "./containers/circasia/alto-de-la-taza/alto-de-la-taza.component";
+import { LaEsperanzaComponent } from "./containers/quimbaya/la-esperanza/la-esperanza.component";
 
 const routes: Routes = [
   { path: '', component: EventsComponent, children:
@@ -24,7 +25,8 @@ const routes: Routes = [
     { path: 'montenegro/la-soledad', component: LaSoledadComponent },
 
     // QUIMBAYA
-    { path: 'quimbaya/villa-laura', component: VillaLauraComponent }
+    { path: 'quimbaya/villa-laura', component: VillaLauraComponent },
+    { path: 'quimbaya/la-esperanza', component: LaEsperanzaComponent }
   ]
   }
 ];
