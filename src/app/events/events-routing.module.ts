@@ -7,6 +7,7 @@ import { LaSoledadComponent } from "./containers/montenegro/la-soledad/la-soleda
 import { VillaLauraComponent } from "./containers/quimbaya/villa-laura/villa-laura.component";
 import { AltoDeLaTazaComponent } from "./containers/circasia/alto-de-la-taza/alto-de-la-taza.component";
 import { LaEsperanzaComponent } from "./containers/quimbaya/la-esperanza/la-esperanza.component";
+import { ColiseoLasGarzasComponent } from "./containers/pijao/coliseo-las-garzas/coliseo-las-garzas.component";
 
 const routes: Routes = [
   { path: '', component: EventsComponent, children:
@@ -26,7 +27,10 @@ const routes: Routes = [
 
     // QUIMBAYA
     { path: 'quimbaya/villa-laura', component: VillaLauraComponent },
-    { path: 'quimbaya/la-esperanza', component: LaEsperanzaComponent }
+    { path: 'quimbaya/la-esperanza', component: LaEsperanzaComponent },
+
+    // PIJAO
+    { path: 'pijao/coliseo-las-garzas', component: ColiseoLasGarzasComponent },
   ]
   }
 ];

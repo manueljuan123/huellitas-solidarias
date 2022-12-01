@@ -10,6 +10,7 @@ import { LaSoledadComponent } from './containers/montenegro/la-soledad/la-soleda
 import { VillaLauraComponent } from './containers/quimbaya/villa-laura/villa-laura.component';
 import { AltoDeLaTazaComponent } from './containers/circasia/alto-de-la-taza/alto-de-la-taza.component';
 import { LaEsperanzaComponent } from './containers/quimbaya/la-esperanza/la-esperanza.component';
+import { ColiseoLasGarzasComponent } from './containers/pijao/coliseo-las-garzas/coliseo-las-garzas.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +22,7 @@ import { LaEsperanzaComponent } from './containers/quimbaya/la-esperanza/la-espe
         VillaLauraComponent,
         AltoDeLaTazaComponent,
         LaEsperanzaComponent,
+        ColiseoLasGarzasComponent,
     ],
     imports: [
         CommonModule,
