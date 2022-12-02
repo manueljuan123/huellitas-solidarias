@@ -8,6 +8,7 @@ import { VillaLauraComponent } from "./containers/quimbaya/villa-laura/villa-lau
 import { AltoDeLaTazaComponent } from "./containers/circasia/alto-de-la-taza/alto-de-la-taza.component";
 import { LaEsperanzaComponent } from "./containers/quimbaya/la-esperanza/la-esperanza.component";
 import { ColiseoLasGarzasComponent } from "./containers/pijao/coliseo-las-garzas/coliseo-las-garzas.component";
+import { ParquePrincipalComponent } from "./containers/cordoba/parque-principal/parque-principal.component";
 
 const routes: Routes = [
   { path: '', component: EventsComponent, children:
@@ -31,6 +32,9 @@ const routes: Routes = [
 
     // PIJAO
     { path: 'pijao/coliseo-las-garzas', component: ColiseoLasGarzasComponent },
+
+    // CÓRDOBA
+    { path: 'cordoba/parque-principal', component: ParquePrincipalComponent}
   ]
   }
 ];
