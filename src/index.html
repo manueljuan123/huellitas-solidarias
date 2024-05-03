@@ -1,27 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Huellitas Solidarias</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/img/logos/huellitas-solidarias-circulo.png">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <title>Huellitas Solidarias</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/logos/huellitas-solidarias-circulo.png"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet"></head>
-    <!-- Comfortaa -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Comfortaa -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <body>
-  <app-root></app-root>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-</body>
+    <app-root></app-root>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      function loadScript(a) {
+        var b = document.getElementsByTagName("head")[0],
+          c = document.createElement("script");
+        (c.type = "text/javascript"),
+          (c.src = "https://tracker.metricool.com/resources/be.js"),
+          (c.onreadystatechange = a),
+          (c.onload = a),
+          b.appendChild(c);
+      }
+      loadScript(function () {
+        beTracker.t({ hash: "b0a9d1bde0552876a6d2c46e15db21a1" });
+      });
+    </script>
+  </body>
 </html>
